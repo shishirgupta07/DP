@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-
+  // items are iterating level wise
   public static void permutations(int[] boxes, int ci, int ti){
     if(ci>ti)
     {
@@ -18,7 +18,7 @@ public class Main {
         if(boxes[i]==0)
         {
             boxes[i]=ci;
-            permutations(boxes,ci+1,ti);
+            permutations(boxes,ci+1,ti); //level wise item is adding (in each iteration). 
             boxes[i]=0;
             
         }
